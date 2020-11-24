@@ -22,6 +22,7 @@ export class AppComponent implements OnInit {
   constructor(private compiler: Compiler, private injector: Injector) {}
 
   ngOnInit() {
+    this.envValue = Math.round(Math.random() * 1);
     if (this.envValue) {
       this.loadWin1();
     } else {
